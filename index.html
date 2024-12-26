@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissors</title>
+    <script defer src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-dvh w-full bg-black flex flex-col justify-center gap-y-20">
+    <div class="p-2 text-5xl font-serif text-center text-white">
+      Rock Paper Scissors
+    </div>
+
+    <div class="flex gap-12 justify-center">
+      <img
+        src="./assets/rock.png"
+        class="w-40 h-40 rounded-full active:translate-y-1 hover:cursor-pointer hover:ring-2 hover:ring-white"
+        data-value="1"
+        alt="Rock"
+      />
+      <img
+        src="./assets/paper.png"
+        class="w-40 h-40 rounded-full active:translate-y-1 hover:cursor-pointer hover:ring-2 hover:ring-white"
+        data-value="2"
+        alt="Paper"
+      />
+      <img
+        src="./assets/scissors.png"
+        class="w-40 h-40 rounded-full active:translate-y-1 hover:cursor-pointer hover:ring-2 hover:ring-white"
+        data-value="3"
+        alt="Scissors"
+      />
+    </div>
+
+    <div class="flex flex-col space-y-3 p-5">
+      <div class="text-4xl font-mono text-center text-white py-3">
+        Computer chose:
+        <span class="actualresult text-4xl font-mono text-white m-0 p-0"></span>
+      </div>
+
+      <div class="win text-3xl font-mono p-3 text-center text-white">
+        Lets Play the Game
+      </div>
+
+      <div class="score flex gap-x-3 justify-center">
+        <div class="text-2xl font-mono text-center text-white">
+          You:<span
+            class="player_counter text-2xl font-mono text-center text-white"
+          ></span>
+        </div>
+        <div class="text-2xl font-mono text-center text-white">
+          Computer:<span
+            class="computer_counter text-2xl font-mono text-center text-white"
+          ></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
